@@ -1,0 +1,113 @@
+/* Your existing styles (styles.css or your stylesheet file) */
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    padding: 9px 18px;
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    /* Move the navbar-nav to the right */
+}
+
+.nav-item {
+    margin-right: 11px;
+    /* Reduce margin for individual navigation items */
+    font-weight: 501;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* Add these styles to your existing CSS */
+
+.navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.navbar-scrolled {
+    background-color: #111 !important;
+    /* Change the background color as needed */
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.3);
+}
+
+.sticky-wrapper {
+    position: fixed;
+    /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky-wrapper+.site-blocks-cover {
+    margin-top: 96px;
+}
+
+.sticky-wrapper .site-navbar {
+    transition: .2s all ease;
+}
+
+.sticky-wrapper .site-navbar .site-menu>li {
+    display: inline-block;
+}
+
+.sticky-wrapper .site-navbar .site-menu>li>a.active {
+    color: #fff;
+    position: relative;
+}
+
+.sticky-wrapper .site-navbar .site-menu>li>a.active:after {
+    height: 2px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+}
+
+.sticky-wrapper.is-sticky .site-navbar {
+    box-shadow: 4px 0 20px -5px rgba(1, 1, 1, 0.5);
+    background: #fff;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-logo a {
+    color: #1111
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-menu>li>a {
+    padding: 5px 20px;
+    color: #1111;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-menu>li>a:hover {
+    color: #7971ea;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-menu>li>a.active:after {
+    background: #7971ea;
+}
+
+.sticky-wrapper .shrink {
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+}

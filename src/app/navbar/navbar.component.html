@@ -5,38 +5,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav ml-auto">
-        <a routerLink="/login" class="nav-link" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a>
-        <a routerLink="/signup" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#signupModal">Join for Free</a>
+        <a routerLink="/lognav/login" class="nav-link">Login</a>
+        <a routerLink="/signup" class="nav-item nav-link" >Join for Free</a>
       </div>
-      
     </div>
   </nav>
-  <!-- Update your login modal HTML -->
-  <div class="modal fade" id="mymodal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Login</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <input type="text"  name="Username" class="form-control" placeholder="Username" required>
-            </div>
-            <div class="form-group">
-              <input type="password" name="password" class="form-control" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-dark login-btn" data-bs-dismiss="modal">Login</button>
-          </form>
-          <p class="signup-link mt-3">Don't have an account? <a routerLink="/signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></p>
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
- 
   
 <router-outlet></router-outlet>

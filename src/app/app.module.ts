@@ -16,6 +16,7 @@ import { ContestComponent } from './contest/contest.component';
 import { CourseComponent } from './course/course.component';
 import { CourseModuleComponent } from './course-module/course-module.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { LognavComponent } from './lognav/lognav.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { QuizComponent } from './quiz/quiz.component';
     ContestComponent,
     CourseComponent,
     CourseModuleComponent,
-    QuizComponent
+    QuizComponent,
+    LognavComponent
   ],
   imports: [
     BrowserModule,

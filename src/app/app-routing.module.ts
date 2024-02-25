@@ -13,15 +13,22 @@ import { ContestComponent } from './contest/contest.component';
 import { AssesmentComponent } from './assesment/assesment.component';
 import { CollabComponent } from './collab/collab.component';
 import { LoginComponent } from './login/login.component';
+import { LognavComponent } from './lognav/lognav.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/navbar/home', pathMatch: 'full' },
+  {
+    path: 'lognav',
+    component: LognavComponent,
+    children: [
+      { path: 'login', component: LoginComponent },
+    ],
+  },
   {
     path: 'navbar',
     component: NavbarComponent,
     children: [
       { path: 'home', component: HomeComponent },
-      { path: 'login', component: LoginComponent },
       { path: 'sign-up', component: SignComponent },
     ],
   },
